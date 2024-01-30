@@ -5,15 +5,12 @@ import "@wix/design-system/styles.global.css";
 const Manage = () => <WixDesignSystemProvider>
 <Page height="60vh">
 <Page.Header
-  title="Basic Info"
+  title="My Leads App"
   actionsBar={
     <Box gap="SP2">
-      <Button skin="inverted">Cancel</Button>
-      <Button>Save</Button>
+      <Button>Update</Button>
     </Box>
   }
-  showBackButton
-  onBackClicked={() => {}}
 />
 <Page.Content>
   <Layout>
