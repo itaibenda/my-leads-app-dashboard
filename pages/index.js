@@ -1,10 +1,15 @@
-import Link from 'next/link'
-const Index = () => (
-  <div>
-    Hello World.{' '}
-    <Link href="/about">
-      <a>About</a>
-    </Link>
-  </div>
-)
-export default Index;
+import { WixDesignSystemProvider } from '@wix/design-system';
+
+import Page from './MyPage';
+
+import "@wix/design-system/styles.global.css";
+
+function App() {
+  return (
+    <WixDesignSystemProvider>
+      <Page/>
+    </WixDesignSystemProvider>
+  );
+}
+
+export default App;
